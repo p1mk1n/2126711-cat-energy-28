@@ -5,15 +5,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/source/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="">
   <link rel="icon" type="image/png" href="">
+  <script src="/source/js/app.js"></script>
   <title>Каталог Cat Energy</title>
 </head>
 
 <body class="page__body">
   <header class="page__header header">
-    <a class="logo" href="index.html">
+    <a class="logo">
       <img src="img/logo-mobile.svg">
       <svg width="101" height="18" viewBox="0 0 101 18" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_135_3354)">
@@ -43,24 +44,25 @@
       </svg>
     </a>
 
-    <!-- <div class="icon nav-icon-5">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div> -->
-
     <nav class="header__navigation navigation">
-      <ul class="navigation__list">
-        <li class="navigation__item">
-          <a class="navigation__link" href="index.html">Главная</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link navigation__link--current">Каталог продукции</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="form.html">Подбор программы</a>
-        </li>
-      </ul>
+        <button class="navigation__button" type="button">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+            <line y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 -0.727046 0.686589 0.727046 2.00171 20)" stroke="black" stroke-width="1.5"/>
+            <line y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 0.727046 -0.686589 0.727046 1 2)" stroke="black" stroke-width="1.5"/>
+          </svg>
+        </button>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--current">Каталог продукции</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
 
@@ -240,7 +242,7 @@
       <div class="catalog__item show-more">
         <h3 class="show-more__title">Показать еще 100500 товаров</h3>
         <p class="show-more__description">На самом деле вкусов гораздо больше!</p>
-        <a class="button__show-more" href="form.html">Показать все</a>
+        <a class="show-more__button" href="#">Показать все</a>
       </div>
     </div>
 
@@ -248,28 +250,28 @@
       <h2 class="add-products__title">Дополнительные товары</h2>
       <ul class="add-products__list">
         <li class="add-products__item">
-          <h3 class="add-products__item__title">Сахарозаменитель</h3>
-          <p class="add-products__item__text">1 упаковка (100 г)</p>
-          <p class="add-products__item__text">200 ₽</p>
-          <a class="add-prodacts__button button" href="form.html">Заказать</a>
+          <h3 class="add-products__item-title">Сахарозаменитель</h3>
+          <p class="add-products__item-text">1 упаковка (100 г)</p>
+          <p class="add-products__item-text">200 ₽</p>
+          <a class="add-products__button button" href="form.html">Заказать</a>
         </li>
         <li class="add-products__item">
-          <h3 class="add-products__item__title">Питьевая вода</h3>
-          <p class="add-products__item__text">5 литров</p>
-          <p class="add-products__item__text">50 ₽</p>
-          <a class="add-prodacts__button button" href="form.html">Заказать</a>
+          <h3 class="add-products__item-title">Питьевая вода</h3>
+          <p class="add-products__item-text">5 литров</p>
+          <p class="add-products__item-text">50 ₽</p>
+          <a class="add-products__button button" href="form.html">Заказать</a>
         </li>
         <li class="add-products__item">
-          <h3 class="add-products__item__title">Молоко</h3>
-          <p class="add-products__item__text">1 литров</p>
-          <p class="add-products__item__text">100 ₽</p>
-          <a class="add-prodacts__button button" href="form.html">Заказать</a>
+          <h3 class="add-products__item-title">Молоко</h3>
+          <p class="add-products__item-text">1 литров</p>
+          <p class="add-products__item-text">100 ₽</p>
+          <a class="add-products__button button" href="form.html">Заказать</a>
         </li>
         <li class="add-products__item">
-          <h3 class="add-products__item__title">Витамины</h3>
-          <p class="add-products__item__text">1 упаковка (30 г)</p>
-          <p class="add-products__item__text">300 ₽</p>
-          <a class="add-prodacts__button button" href="form.html">Заказать</a>
+          <h3 class="add-products__item-title">Витамины</h3>
+          <p class="add-products__item-text">1 упаковка (30 г)</p>
+          <p class="add-products__item-text">300 ₽</p>
+          <a class="add-products__button button" href="form.html">Заказать</a>
         </li>
       </ul>
     </div>
@@ -278,7 +280,7 @@
       <p class="present__text">Закажите все и получите чехол для кота в подарок!</p>
     </div>
 
-    <section class="map">
+    <section class="map map--secondary">
       <h2 class="map__header">Приглашаем к сотрудничеству дилеров!</h2>
       <p class="map__contacts">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       <div class="map__wrapper"></div>
@@ -350,9 +352,9 @@
         </ul>
       </li>
       <li class="links-list__item">
-        <a class="links-list__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="links-list__link link-htmlacademy" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="links-list__text">HTML Academy</span>
-          <svg width="27" height="34" viewBox="0 0 27 34" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+          <svg class="links-list__image" width="27" height="34" viewBox="0 0 27 34" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" />
           </svg>

@@ -1,0 +1,70 @@
+.main-index__programms {
+
+}
+.programms {
+  padding: 20px 20px 0 20px;
+
+  &__card {
+    margin-bottom: 20px;
+    width: 240px;
+    min-height: 266px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 24px 20px 18px;
+  }
+}
+
+.programm-wrapper {
+  background-color: #f2f2f2;
+
+  &__image {
+    margin-right: 12px;
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 37px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  &__description {
+    font-family: "Lato", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0;
+    position: relative;
+    color: #444444;
+    width: 227px;
+    border-bottom: solid 1px #d9d9d9;
+    width: 100%;
+  }
+
+  &__description::after {
+    position: absolute;
+    content: "";
+    border-bottom: solid 1px #d9d9d9;
+    width: 240px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -15px;
+  }
+
+  &__link {
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 16px;
+    padding-top: 15px;
+  }
+
+  &__link:hover {
+
+  }
+
+  &__link:active {
+    color: lighten(#000000;65%);
+  }
+}
+
