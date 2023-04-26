@@ -39,8 +39,5 @@
   "engines": {
     "node": "^16"
   },
-  "type": "module",
-  "dependencies": {
-    "jquery": "^3.6.4"
-  }
+  "type": "module"
 }
