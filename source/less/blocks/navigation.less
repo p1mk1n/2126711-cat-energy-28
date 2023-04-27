@@ -8,7 +8,7 @@
   position: absolute;
   padding: 0;
   margin: 0;
-  top: 38px;
+  top: 17px;
   right: -20px;
   z-index: 10;
 }
@@ -18,6 +18,10 @@
   text-align: center;
   border-bottom: solid 1px #e6e6e6;
   background-color: #ffffff;
+
+  &:first-child {
+    border-top: solid 1px #e6e6e6;
+  }
 }
 
 
@@ -26,6 +30,7 @@
   width: 180px;
   display: block;
   font-family: inherit;
+  font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
@@ -36,11 +41,11 @@
 
 .navigation__link:hover,
 .navigation__link:focus {
-  color: lighten(#000000;30%);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .navigation__link:active {
-  color: lighten(#000000;60%);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .navigation__link--current {
