@@ -1,24 +1,52 @@
 .intro {
-  margin: 0;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 120px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 190px;
+  }
 }
 
 .intro__wrapper {
-  background-image: url("../img/index-background.jpg");
-  background-color: rgba(104, 183, 56, 0.85);
-  background-repeat: no-repeat;
-  width: 320px;
+  background: rgba(104, 183, 56, 0.85) url("../img/index-background.jpg") no-repeat center;
+  min-width: 320px;
   min-height: 302px;
-  padding-top: 27px;
+  margin-bottom: 138px;
+
+  @media (min-width: @tablet-width) {
+    background: none;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    background: rgba(104, 183, 56, 0.85) url("../img/index-background.jpg") no-repeat center;
+    min-width: 720px;
+    min-height: 694px;
+  }
 }
 
 .intro__title {
   margin: 0;
-  margin-bottom: 25px;
+  padding: 27px 0 25px;
   color: #ffffff;
   font-size: 36px;
   line-height: 36px;
   text-align: center;
   font-weight: 400;
+
+  @media (min-width: @tablet-width) {
+    color: #000000;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: start;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: #000000;
+  }
 }
 
 .intro__description {
@@ -29,10 +57,34 @@
   text-align: center;
   text-transform: uppercase;
   font-weight: 400;
+
+  @media (min-width: @tablet-width) {
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: start;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: #000000;
+  }
 }
 
 .intro__image {
   margin: 0;
+  position: absolute;
+  bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    bottom: -100px;
+    z-index: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+  }
 }
 
 .intro__button {
@@ -42,4 +94,11 @@
   line-height: 18px;
   width: 192px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    padding: 14px 26px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 150px;
+  }
 }

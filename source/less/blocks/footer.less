@@ -1,6 +1,14 @@
 .footer {
   background-color: #f2f2f2;
   padding: 20px 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 40px 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 50px 90px;
+  }
 }
 
 .footer__wrapper {
@@ -8,6 +16,12 @@
   display: flex;
   flex-direction: column;
   list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .footer__logo {
@@ -46,7 +60,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    padding: 20px;
+    min-width: 167px;
+  }
 }
 
 .footer__htmlacademy-text {
@@ -73,3 +91,4 @@
     opacity: 30%;
   }
 }
+

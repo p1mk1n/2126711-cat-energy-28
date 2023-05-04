@@ -1,5 +1,13 @@
 .description-item {
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
 .description-item__icon {
@@ -11,7 +19,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 31px;
+  }
 }
+
 
 .description-item__text {
   font-family: @lato;
@@ -20,4 +35,14 @@
   font-size: 14px;
   line-height: 18px;
   width: 199px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    width: 224px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 204px;
+  }
 }
