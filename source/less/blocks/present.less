@@ -10,10 +10,17 @@
   color: #ffffff;
   padding: 186px 59px 43px;
   text-align: center;
-  background-color: rgba(104, 183, 56, 0.85);
-  background-image: url("../img/present-background.jpg");
-  background-repeat: no-repeat;
   position: relative;
+  background: rgba(104, 183, 56, 0.85) url("../img/present-background.jpg") no-repeat center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
 .present__text::before {
@@ -26,5 +33,14 @@
   left: 50%;
   transform: translateX(-50%);
   top: 50px;
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+    height: 82px;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 

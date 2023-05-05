@@ -4,8 +4,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   border-top: solid 1px #ebebeb;
   border-bottom: solid 1px #ebebeb;
+
+  @media (min-width: @tablet-width) {
+    border: 2px solid #f2f2f2;
+    padding: 78px 37px 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
 .show-more__title {
@@ -16,6 +26,29 @@
   color: #111111;
   margin: 0;
   margin-bottom: 8px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
+}
+
+.show-more__title::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/plus.svg");
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -40px;
 }
 
 .show-more__description {
@@ -25,6 +58,16 @@
   margin: 0;
   color: #444444;
   margin-bottom: 21px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 87px;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
 .show-more__button {
@@ -36,6 +79,14 @@
   background-color: #f2f2f2;
   padding: 10px 94px;
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 10px 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 
   &:hover {
     background-color: #ebebeb;
