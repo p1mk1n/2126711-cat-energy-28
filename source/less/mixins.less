@@ -20,11 +20,25 @@
   }
 }
 
-@lato: "Lato", "Arial", sans-serif;
+.container() {
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
 
-@tablet-width: 768px;
-@desktop-width: 1200px;
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    padding: 0 30px;
+  }
 
-// @media (min-width: @tablet-width)
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    padding: 0 110px;
+  }
+}
 
-// @media (min-width: @desktop-width)
+.zero-centered() {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}

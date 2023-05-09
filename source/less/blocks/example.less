@@ -1,12 +1,13 @@
 .example {
   background-color: #eaeaea;
+  display: flex;
 
   @media (min-width: @tablet-width) {
-    background-color: #ffffff;
+    background: linear-gradient(#ffffff 60%, #ffffff 60%, #eaeaea 60%, #eaeaea 40%);
   }
 
   @media (min-width: @desktop-width) {
-
+    background: linear-gradient(#ffffff 20%, #ffffff 20%, #eaeaea 20%, #eaeaea 80%);
   }
 }
 
@@ -133,7 +134,15 @@
 }
 
 .example__slider {
-  margin: 0;
   background-color: #eaeaea;
+
+  @media (min-width: @tablet-width) {
+    align-self: center;
+    justify-self: center;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
