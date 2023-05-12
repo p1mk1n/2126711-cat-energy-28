@@ -1,12 +1,14 @@
 .fieldset {
   padding: 20px 0;
   border: none;
+}
 
-  @media (min-width: @tablet-width) {
-  }
+.fieldset__wrapper {
+  .form-container();
+}
 
-  @media (min-width: @desktop-width) {
-  }
+.fieldset--wide {
+  grid-column: 1/ -1;
 }
 
 .fieldset__title {
@@ -33,9 +35,18 @@
   @media (min-width: @tablet-width) {
     gap: 30px;
   }
+}
+
+.fieldset__list--row {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
 
   @media (min-width: @desktop-width) {
-
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
   }
 }
 
@@ -44,73 +55,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-
-  @media (min-width: @tablet-width) {
-  }
-
-  @media (min-width: @desktop-width) {
-  }
-}
-
-.fieldset__label {
-  font-size: 16px;
-  line-height: 18px;
-  color: #444444;
-  margin-right: 13px;
-
-  @media (min-width: @tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
-
-.fieldset__input {
-  font-size: 16px;
-  line-height: 18px;
-  color: #444444;
-  text-transform: uppercase;
-  font-weight: 400;
-  padding: 14px 15px 13px;
-  border: solid 1px #e7e7e7;
   flex-grow: 1;
-
-  @media (min-width: @tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
-
-.fieldset__input--email {
-  color: #444444;
-}
-
-.fieldset__input--telefone {
-  color: #444444;
-}
-
-.fieldset--wide {
-
-  @media (min-width: @tablet-width) {
-  }
-
-  @media (min-width: @desktop-width) {
-    grid-column: 1/ -1;
-  }
-}
-
-.fieldset__list--wide {
-
-  @media (min-width: @tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-  }
 }
 
 .fieldset__textarea {
@@ -118,6 +63,7 @@
   line-height: 18px;
   color: #444444;
   font-family: inherit;
+  display: flex;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -125,7 +71,7 @@
   }
 }
 
-.fieldset--border {
+.fieldset__list--border {
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
 

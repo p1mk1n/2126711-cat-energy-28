@@ -14,8 +14,7 @@
 <body class="page__body">
   <header class="page__header header">
     <a class="header__logo" href="index.html">
-      <img src="img/logo.png" width="34px" height="38px">
-      <img src="img/logo-text.png" width="101px" height="18px">
+      <img src="img/logo.svg" width="180" height="38">
     </a>
 
     <button class="header__navigation-button" type="button">
@@ -49,97 +48,108 @@
         <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       </div>
 
+
       <fieldset class="form__fieldset fieldset">
-        <ul class="fieldset__list">
-          <li class="fieldset__item">
-            <label class="fieldset__label" for="name">ИМЯ:*</label>
-            <input class="fieldset__input" type="text" id="name" placeholder="Имя кота" name="Name" required>
-          </li>
-          <li class="fieldset__item">
-            <label class="fieldset__label" for="weight">ВЕС (КГ):*</label>
-            <input class="fieldset__input" type="text" id="weight" placeholder="7" name="Weight" required>
-          </li>
-          <li class="fieldset__item">
-            <label class="fieldset__label" for="age">ВОЗРАСТ (ЛЕТ):*</label>
-            <input class="fieldset__input" type="text" id="age" placeholder="7" name="Age">
-          </li>
-        </ul>
+        <div class="fieldset__wrapper">
+          <ul class="fieldset__list">
+            <li class="fieldset__item field">
+              <label class="field__label" for="name">ИМЯ:*</label>
+              <input class="field__input" type="text" id="name" placeholder="Имя кота" name="Name" required>
+            </li>
+            <li class="fieldset__item field">
+              <label class="field__label" for="weight">ВЕС (КГ):*</label>
+              <input class="field__input" type="text" id="weight" placeholder="7" name="Weight" required>
+            </li>
+            <li class="fieldset__item field">
+              <label class="field__label" for="age">ВОЗРАСТ (ЛЕТ):*</label>
+              <input class="field__input" type="text" id="age" placeholder="7" name="Age">
+            </li>
+          </ul>
+        </div>
       </fieldset>
 
-      <fieldset class="form__fieldset fieldset fieldset--border">
-        <ul class="fieldset__list">
-          <li class="fieldset__item">
-            <label class="fieldset__label radio">
-              <input class="visually-hidden radio__input" type="radio" name="programm" value="weight loss" checked>
-              <span class="radio__text">Похудение</span>
-            </label>
-          </li>
-          <li class="fieldset__item">
-            <label class="fieldset__label radio">
-              <input class="visually-hidden radio__input" type="radio" name="programm" value="weight gain">
-              <span class="radio__text">Набор массы</span>
-            </label>
-          </li>
-          <li class="fieldset__item">
-            <label class="fieldset__label radio">
-              <input class="visually-hidden radio__input" type="radio" name="programm" value="consultation">
-              <span class="radio__text">Не знаю (нужен ваш совет)</span>
-            </label>
-          </li>
-        </ul>
-      </fieldset>
-
-      <fieldset class="form__fieldset fieldset fieldset--wide">
-        <legend class="fieldset__title">Контактные данные (владельца кота)</legend>
-        <ul class="fieldset__list">
-          <li class="fieldset__item">
-            <label class="fieldset__label" for="e-mail">E-MAIL:*</label>
-            <input class="fieldset__input fieldset__input--email " type="email" id="e-mail"
-              placeholder="kuklachev@gmail.com" name="e-mail" required>
-          </li>
-          <li class="fieldset__item">
-            <label class="fieldset__label" for="number">ТЕЛЕФОН:*</label>
-            <input class="fieldset__input fieldset__input--telefone" type="tel" id="number"
-              placeholder="8(960)900-60-90" name="number" required>
-          </li>
-        </ul>
+      <fieldset class="form__fieldset fieldset">
+        <div class="fieldset__wrapper">
+          <ul class="fieldset__list fieldset__list--border">
+            <li class="fieldset__item">
+              <label class="fieldset__label radio">
+                <input class="visually-hidden radio__input" type="radio" name="programm" value="weight loss" checked>
+                <span class="radio__text">Похудение</span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__label radio">
+                <input class="visually-hidden radio__input" type="radio" name="programm" value="weight gain">
+                <span class="radio__text">Набор массы</span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__label radio">
+                <input class="visually-hidden radio__input" type="radio" name="programm" value="consultation">
+                <span class="radio__text">Не знаю (нужен ваш совет)</span>
+              </label>
+            </li>
+          </ul>
+        </div>
       </fieldset>
 
       <fieldset class="form__fieldset fieldset fieldset--wide">
-        <legend class="fieldset__title">Комментарий</legend>
-        <label class="visually-hidden" for="textarea"></label>
-        <textarea class="fieldset__textarea" placeholder="Расскажите обо всех повадках кота" rows="7"
-          cols="35" id="textarea"></textarea>
+        <div class="fieldset__wrapper">
+          <legend class="fieldset__title">Контактные данные (владельца кота)</legend>
+          <ul class="fieldset__list fieldset__list--row">
+            <li class="fieldset__item field">
+              <label class="field__label" for="e-mail">E-MAIL:*</label>
+              <input class="field__input field__input--email " type="email" id="e-mail"
+                placeholder="kuklachev@gmail.com" name="e-mail" required>
+            </li>
+            <li class="fieldset__item field">
+              <label class="field__label" for="number">ТЕЛЕФОН:*</label>
+              <input class="field__input field__input--telefone" type="tel" id="number" placeholder="8(960)900-60-90"
+                name="number" required>
+            </li>
+          </ul>
+        </div>
       </fieldset>
 
       <fieldset class="form__fieldset fieldset fieldset--wide">
-        <legend class="fieldset__title">Дополнительно</legend>
-        <ul class="fieldset__list fieldset__list--wide">
-          <li class="fieldset__item">
-            <label class="fieldset__label checkbox">
-              <input class="visually-hidden checkbox__input" type="checkbox" name="sweetener" value="sweetener" checked>
-              <span class="checkbox__text">Сахарозаменитель</span>
-            </label>
-          </li>
-          <li class="fieldset__item">
-            <label class="fieldset__label checkbox">
-              <input class="visually-hidden checkbox__input" type="checkbox" name="water" value="water">
-              <span class="checkbox__text">Питьевая вода</span>
-            </label>
-          </li>
-          <li class="fieldset__item">
-            <label class="fieldset__label checkbox">
-              <input class="visually-hidden checkbox__input" type="checkbox" name="milk" value="milk">
-              <span class="checkbox__text">Молоко</span>
-            </label>
-          </li>
-          <li class="fieldset__item">
-            <label class="fieldset__label checkbox">
-              <input class="visually-hidden checkbox__input" type="checkbox" name="vitamins" value="vitamins">
-              <span class="checkbox__text">Витамины</span>
-            </label>
-          </li>
-        </ul>
+        <div class="fieldset__wrapper">
+          <label class="fieldset__title" for="textarea">Комментарий</label>
+          <textarea class="fieldset__textarea" placeholder="Расскажите обо всех повадках кота" rows="7" cols="35"
+            id="textarea"></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset class="form__fieldset fieldset fieldset--wide">
+        <div class="fieldset__wrapper">
+          <legend class="fieldset__title">Дополнительно</legend>
+          <ul class="fieldset__list fieldset__list--row">
+            <li class="fieldset__item">
+              <label class="fieldset__label checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="sweetener" value="sweetener"
+                  checked>
+                <span class="checkbox__text">Сахарозаменитель</span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__label checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="water" value="water">
+                <span class="checkbox__text">Питьевая вода</span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__label checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="milk" value="milk">
+                <span class="checkbox__text">Молоко</span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__label checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="vitamins" value="vitamins">
+                <span class="checkbox__text">Витамины</span>
+              </label>
+            </li>
+          </ul>
+        </div>
       </fieldset>
 
       <div class="form__button-wrapper">
@@ -149,11 +159,15 @@
     </form>
 
     <section class="map">
-      <div class="map__adress-wrapper map__adress-wrapper--inner">
-        <h2 class="map__header">Приглашаем к сотрудничеству дилеров!</h2>
-        <p class="map__contacts">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="map__wrapper">
+        <div class="map__adress-wrapper">
+          <h2 class="map__header">Приглашаем к сотрудничеству дилеров!</h2>
+          <p class="map__contacts">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
       </div>
-      <div class="map__wrapper"></div>
+      <div class="map__image">
+        <!-- <iframe class="" src="" width="" height="" name="" allow=""></iframe> -->
+      </div>
     </section>
   </main>
 

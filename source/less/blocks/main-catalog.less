@@ -1,4 +1,8 @@
 .main-catalog {
+
+}
+
+.main-catalog__main-wrapper {
   .container();
 }
 
@@ -26,6 +30,7 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+  grid-column: 1/ -1;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 30px;
@@ -51,10 +56,6 @@
     align-items: center;
     padding: 0 38px 39px;
   }
-
-  @media (min-width: @desktop-width) {
-
-  }
 }
 
 .main-catalog__additional {
@@ -64,12 +65,10 @@
   padding: 35px 0;
 
   @media (min-width: @tablet-width) {
-padding: 35px 0;
+    padding: 35px 0;
   }
 
   @media (min-width: @desktop-width) {
-    flex-direction: row;
-    flex-wrap: wrap;
     padding: 35px 0;
   }
 }

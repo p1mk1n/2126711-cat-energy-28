@@ -1,12 +1,19 @@
 .map {
-  border: none;
-  position: relative;
-
-  @media (min-width: @tablet-width) {
+  margin: 0 auto;
+  
+  @media (min-width: @desktop-width) {
+    background: #f2f2f2 url(../img/map-3.jpg) no-repeat center;
+    background-size: cover;
+    min-width: 1440px;
+    min-height: 400px;
   }
+}
+
+.map__wrapper {
+  .container();
 
   @media (min-width: @desktop-width) {
-
+    position: relative;
   }
 }
 
@@ -23,20 +30,16 @@
 
   @media (min-width: @desktop-width) {
     padding: 59px 60px 56px 80px;
-    position: absolute;
     width: 565px;
     height: 198px;
     top: 95px;
     left: 110px;
+    position: absolute;
   }
 }
 
 .map__adress-wrapper--inner {
   background-color: #f2f2f2;
-
-  @media (min-width: @tablet-width) {
-
-  }
 
   @media (min-width: @desktop-width) {
     background-color: #ffffff;
@@ -54,10 +57,6 @@
     font-size: 20px;
     line-height: 26px;
     width: 171px;
-  }
-
-  @media (min-width: @desktop-width) {
-
   }
 }
 
@@ -81,41 +80,23 @@
   }
 }
 
-.map__wrapper {
+.map__image {
   background: #f2f2f2 url(../img/map-1.jpg) no-repeat center;
-  width: 320px;
+  background-size: cover;
+  min-width: 320px;
   height: 362px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     background: #f2f2f2 url(../img/map-2.jpg) no-repeat center;
-    width: 768px;
-    height: 362px;
-  }
-
-  @media (min-width: @desktop-width) {
-    background: #f2f2f2 url(../img/map-3.jpg) no-repeat center;
-    width: 1440px;
+    background-size: cover;
+    min-width: 768px;
     height: 400px;
   }
-}
-
-.map__wrapper::after {
-  position: absolute;
-  content: "";
-  background-image: url(../img/map-logo.svg);
-  background-repeat: no-repeat;
-  width: 56px;
-  height: 52px;
-  left: 42%;
-  top: 52%;
-
-  @media (min-width: @tablet-width) {
-    left: 46%;
-    top: 60%;
-  }
 
   @media (min-width: @desktop-width) {
-    left: 65%;
-    top: 47%;
+    background: none;
+    width: 0;
+    height: 0;
   }
 }
