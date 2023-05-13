@@ -26,6 +26,11 @@
   top: -3px;
   background-color: #ffffff;
   border: solid 1px #cdcdcd;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 
@@ -39,10 +44,10 @@
   border: solid 1px #bababa;
 }
 
-.checkbox__text:disabled {
+.checkbox__input:disabled {
   opacity: 30%;
 }
 
-.checkbox__text:disabled::before {
+.checkbox__input:disabled::before {
   opacity: 30%;
 }

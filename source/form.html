@@ -42,15 +42,14 @@
   </header>
 
   <main class="main-form">
+    <div class="main-form__header">
+      <h1 class="main-form__title">Подбор программы</h1>
+      <p class="main-form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    </div>
     <form class="main-form__form form" action="https://echo.htmlacademy.ru/" method="post">
-      <div class="form__header">
-        <h1 class="form__title">Подбор программы</h1>
-        <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-      </div>
 
-
-      <fieldset class="form__fieldset fieldset">
-        <div class="fieldset__wrapper">
+      <div class="form__fieldset-wrapper">
+        <fieldset class="form__fieldset fieldset">
           <ul class="fieldset__list">
             <li class="fieldset__item field">
               <label class="field__label" for="name">ИМЯ:*</label>
@@ -65,11 +64,9 @@
               <input class="field__input" type="text" id="age" placeholder="7" name="Age">
             </li>
           </ul>
-        </div>
-      </fieldset>
+        </fieldset>
 
-      <fieldset class="form__fieldset fieldset">
-        <div class="fieldset__wrapper">
+        <fieldset class="form__fieldset fieldset">
           <ul class="fieldset__list fieldset__list--border">
             <li class="fieldset__item">
               <label class="fieldset__label radio">
@@ -90,12 +87,14 @@
               </label>
             </li>
           </ul>
-        </div>
-      </fieldset>
+        </fieldset>
+      </div>
 
-      <fieldset class="form__fieldset fieldset fieldset--wide">
+      <fieldset class="form__fieldset fieldset">
+        <h2 class="fieldset__title">
+          <span class="fieldset__title-text">Контактные данные (владельца кота)</span>
+        </h2>
         <div class="fieldset__wrapper">
-          <legend class="fieldset__title">Контактные данные (владельца кота)</legend>
           <ul class="fieldset__list fieldset__list--row">
             <li class="fieldset__item field">
               <label class="field__label" for="e-mail">E-MAIL:*</label>
@@ -111,18 +110,22 @@
         </div>
       </fieldset>
 
-      <fieldset class="form__fieldset fieldset fieldset--wide">
+      <fieldset class="form__fieldset fieldset">
+        <h2 class="fieldset__title" for="textarea">
+          <span class="fieldset__title-text">Комментарий</span>
+        </h2>
         <div class="fieldset__wrapper">
-          <label class="fieldset__title" for="textarea">Комментарий</label>
           <textarea class="fieldset__textarea" placeholder="Расскажите обо всех повадках кота" rows="7" cols="35"
             id="textarea"></textarea>
         </div>
       </fieldset>
 
-      <fieldset class="form__fieldset fieldset fieldset--wide">
+      <fieldset class="form__fieldset fieldset">
+        <h2 class="fieldset__title">
+          <span class="fieldset__title-text">Дополнительно</span>
+        </h2>
         <div class="fieldset__wrapper">
-          <legend class="fieldset__title">Дополнительно</legend>
-          <ul class="fieldset__list fieldset__list--row">
+          <ul class="fieldset__list fieldset__list--checkbox">
             <li class="fieldset__item">
               <label class="fieldset__label checkbox">
                 <input class="visually-hidden checkbox__input" type="checkbox" name="sweetener" value="sweetener"
@@ -166,7 +169,7 @@
         </div>
       </div>
       <div class="map__image">
-        <!-- <iframe class="" src="" width="" height="" name="" allow=""></iframe> -->
+        <!-- <iframe class="" src="https://yandex.ru/maps/-/CCUkV0DOPB" width="" height="" name="" allow=""></iframe> -->
       </div>
     </section>
   </main>
