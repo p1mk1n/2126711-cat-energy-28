@@ -1,0 +1,123 @@
+.fieldset {
+  padding: 20px 0;
+  border: none;
+}
+
+.fieldset__wrapper {
+  .form-container();
+}
+
+.fieldset__title {
+  padding: 0;
+  color: #000000;
+  margin-bottom: 35px;
+  font-size: 24px;
+  line-height: 26px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.fieldset__title::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #68b738;
+  top: 65%;
+  transform: translateY(-50%);
+}
+
+.fieldset__title-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #ffffff;
+  position: relative;
+  padding: 0 20px;
+  max-width: fit-content;
+  width: 260px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 38px;
+    width: 600px;
+    margin-left: 5%;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 40px;
+    margin-left: 6%;
+  }
+}
+
+.fieldset__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  @media (min-width: @tablet-width) {
+    gap: 20px;
+  }
+}
+
+.fieldset__list--checkbox {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+  }
+}
+
+.fieldset__list--row {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+  }
+}
+
+.fieldset__list--border {
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 25px;
+
+  @media (min-width: @tablet-width) {
+    border: 1px solid #e7e7e7;
+    padding: 30px;
+  }
+}
+
+.fieldset__item {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.fieldset__textarea {
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  font-family: inherit;
+  display: flex;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

@@ -1,5 +1,10 @@
 .navigation {
   position: relative;
+  z-index: 4;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 51px;
+  }
 }
 
 .navigation__list {
@@ -8,9 +13,21 @@
   position: absolute;
   padding: 0;
   margin: 0;
-  top: 38px;
+  top: 17px;
   right: -20px;
   z-index: 10;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+    position: static;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    width: 447px;
+  }
 }
 
 .navigation__item {
@@ -18,31 +35,86 @@
   text-align: center;
   border-bottom: solid 1px #e6e6e6;
   background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    border: none;
+  }
 }
 
+.navigation__item:first-child {
+  border-top: solid 1px #e6e6e6;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    border: none;
+  }
+}
 
 .navigation__link {
   padding: 22px 70px;
   width: 180px;
   display: block;
   font-family: inherit;
+  font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    min-width: 64px;
+    padding: 18px 11px 10px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 18px 6px 10px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .navigation__link:hover,
 .navigation__link:focus {
-  color: lighten(#000000;30%);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .navigation__link:active {
-  color: lighten(#000000;60%);
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.navigation__item--secondary {
+  @media (min-width: @desktop-width) {
+    background-color: transparent;
+  }
+}
+
+.navigation__link--secondary {
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
 }
 
 .navigation__link--current {
-  margin: 0;
+  @media (min-width: @tablet-width) {
+    border-bottom: 2px solid #68b738;
+  }
+}
+
+.navigation__link--secondary-current {
+  @media (min-width: @desktop-width) {
+    border-bottom: 2px solid #ffffff;
+  }
 }

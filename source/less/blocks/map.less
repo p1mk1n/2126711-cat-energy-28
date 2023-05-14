@@ -1,26 +1,104 @@
 .map {
-  display: flex;
-  padding: 26px 20px;
+  margin: 0 auto;
+
+  @media (min-width: @desktop-width) {
+    background: #f2f2f2 url(../img/map-3.jpg) no-repeat center;
+    background-size: cover;
+    min-width: 1440px;
+    min-height: 400px;
+  }
 }
 
-.map--inner {
+.map__wrapper {
+  .container();
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
+}
+
+.map__adress-wrapper {
+  background-color: #ffffff;
+  display: flex;
+  padding: 26px 0;
+  justify-content: space-between;
+  
+  @media (min-width: @tablet-width) {
+    padding: 59px 0 56px;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 59px 60px 56px 80px;
+    width: 565px;
+    height: 198px;
+    top: 95px;
+    left: 110px;
+    position: absolute;
+  }
+}
+
+.map__adress-wrapper--inner {
   background-color: #f2f2f2;
+
+  @media (min-width: @desktop-width) {
+    background-color: #ffffff;
+  }
 }
 
 .map__header {
   margin: 0;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   text-transform: uppercase;
+  width: 140px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 171px;
+  }
 }
 
 .map__contacts {
-  .lato();
+  font-family: @lato;
+  color: #444444;
   margin: 0;
   font-size: 14px;
   line-height: 20px;
+  width: 140px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 160px;
+    text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 175px;
+    text-align: left;
+  }
 }
 
-.map__wrapper {
-  margin: 0;
+.map__image {
+  background: #f2f2f2 url(../img/map-1.jpg) no-repeat center;
+  background-size: cover;
+  min-width: 320px;
+  height: 362px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    background: #f2f2f2 url(../img/map-2.jpg) no-repeat center;
+    background-size: cover;
+    min-width: 768px;
+    height: 400px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background: none;
+    width: 0;
+    height: 0;
+  }
 }
