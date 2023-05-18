@@ -22,7 +22,7 @@
   display: flex;
   padding: 26px 0;
   justify-content: space-between;
-  
+
   @media (min-width: @tablet-width) {
     padding: 59px 0 56px;
     flex-wrap: wrap;
@@ -100,5 +100,22 @@
     background: none;
     width: 0;
     height: 0;
+  }
+}
+
+.map__iframe {
+  display: flex;
+  background-position: center;
+  min-width: 320px;
+  height: 362px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    min-width: 768px;
+    height: 400px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
   }
 }

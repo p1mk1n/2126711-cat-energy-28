@@ -1,6 +1,7 @@
 .navigation {
   position: relative;
   z-index: 4;
+  margin-left: auto;
 
   @media (min-width: @desktop-width) {
     padding-top: 51px;
@@ -8,12 +9,11 @@
 }
 
 .navigation__list {
-  display: none;
   list-style-type: none;
   position: absolute;
   padding: 0;
   margin: 0;
-  top: 17px;
+  top: 65px;
   right: -20px;
   z-index: 10;
 
@@ -54,8 +54,8 @@
 }
 
 .navigation__link {
-  padding: 22px 70px;
-  width: 180px;
+  padding: 22px 40px;
+  width: 320px;
   display: block;
   font-family: inherit;
   font-weight: 500;
@@ -112,5 +112,21 @@
 .navigation__list--secondary .navigation__link--current {
   @media (min-width: @desktop-width) {
     border-bottom: 2px solid #ffffff;
+  }
+}
+
+.navigation--opened .navigation__list {
+  display: block;
+}
+
+.navigation--nojs .navigation__list {
+  display: block;
+}
+
+.navigation--closed .navigation__list {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
   }
 }

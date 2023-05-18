@@ -17,27 +17,25 @@
       <img src="img/logo.svg" width="180" height="38">
     </a>
 
-    <button class="header__navigation-button" type="button">
-      <svg width="20" height="20" viewBox="0 0 20 20" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
-        <line y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 -0.727046 0.686589 0.727046 2.00171 20)"
-          stroke="black" stroke-width="1.5" />
-        <line y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 0.727046 -0.686589 0.727046 1 2)"
-          stroke="black" stroke-width="1.5" />
-      </svg>
-    </button>
-
-    <nav class="header__navigation navigation">
-      <ul class="navigation__list navigation__list--secondary">
-        <li class="navigation__item">
-          <a class="navigation__link navigation__link--current navigation__link--secondary-current">Главная</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="catalog.html">Каталог продукции</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="form.html">Подбор программы</a>
-        </li>
-      </ul>
+    <nav class="header__navigation navigation navigation--closed navigation--nojs">
+      <button class="navigation__button icon" type="button">
+        <span class="icon__item"></span>
+        <span class="icon__item"></span>
+        <span class="icon__item"></span>
+      </button>
+      <div class="navigation__wrapper">
+        <ul class="navigation__list navigation__list--secondary">
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--current">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
 
@@ -183,7 +181,7 @@
         </div>
       </div>
       <div class="map__image">
-        <!-- <iframe class="" src="https://yandex.ru/maps/-/CCUkV0DOPB" width="" height="" name="" allow=""></iframe> -->
+        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728549!2d30.320472478070897!3d59.93871647491521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1684410297568!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
   </main>
@@ -210,7 +208,8 @@
               <path
                 d="M103.361 21.9487C102.32 20.1554 101.831 18.0821 101.958 15.9999V8.20507C101.934 6.71875 102.102 5.23567 102.459 3.79481C102.794 2.71811 103.462 1.78218 104.362 1.12815C105.481 0.450275 106.771 0.128917 108.068 0.20507C110.171 0.20507 111.674 0.71789 112.575 1.8461C113.612 3.33582 114.108 5.14977 113.977 6.9743V7.79481H110.973V7.07687C110.977 6.21789 110.91 5.36008 110.772 4.51276C110.688 3.97732 110.4 3.49792 109.971 3.17943C109.408 2.80104 108.74 2.62099 108.068 2.66661C107.35 2.61949 106.639 2.83785 106.065 3.28199C105.829 3.48529 105.637 3.73569 105.499 4.01787C105.361 4.30004 105.281 4.60805 105.264 4.92302C105.132 5.83993 105.065 6.76543 105.063 7.69225V16.4102C104.99 17.7384 105.194 19.0674 105.664 20.3076C106.065 21.1281 106.866 21.4358 108.068 21.4358C108.543 21.4964 109.024 21.4119 109.452 21.1929C109.879 20.9739 110.234 20.6302 110.472 20.2051C111.001 18.9081 111.241 17.5064 111.173 16.1025V14.4615H108.268V12.1025H114.077V23.6923H112.074L111.774 21.0256C111.511 21.9193 110.964 22.6975 110.22 23.2364C109.476 23.7753 108.578 24.0441 107.667 23.9999C106.84 24.0498 106.013 23.8885 105.261 23.5304C104.51 23.1724 103.857 22.6289 103.361 21.9487Z" />
               <path
-                d="M120.488 15.4871L115.58 0.410156H118.585L122.09 11.6922L125.495 0.410156H128.5L123.592 15.4871V23.6922H120.588V15.4871H120.488Z"></path>
+                d="M120.488 15.4871L115.58 0.410156H118.585L122.09 11.6922L125.495 0.410156H128.5L123.592 15.4871V23.6922H120.588V15.4871H120.488Z">
+              </path>
             </g>
             <defs>
               <clippath id="clip0_83854_433">
@@ -265,6 +264,8 @@
     </div>
   </footer>
 
+  <script src="js/app.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
