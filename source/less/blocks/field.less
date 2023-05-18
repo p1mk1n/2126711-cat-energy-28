@@ -32,8 +32,28 @@
 
 .field__input--email {
   color: #444444;
+  position: relative;
+}
+
+.field__input--email::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/email-icon.svg");
+  width: 17px;
+  height: 13px;
+  left: 0;
+  top: 0;
 }
 
 .field__input--telefone {
   color: #444444;
+  position: relative;
+}
+
+.field__input--telefone::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/telefon-icon.svg");
+  width: 15px;
+  height: 15px;
 }
