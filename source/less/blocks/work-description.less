@@ -54,15 +54,17 @@
 }
 
 .work-description__item::after {
-  content: counter(num);
-  counter-increment: num;
-  color: #f2f2f2;
-  position: absolute;
-  font-size: 280px;
-  line-height: 280px;
-  z-index: 0;
-  top: -40px;
-  right: 35px;
+  @media (min-width: @tablet-width) {
+    content: counter(num);
+    counter-increment: num;
+    color: #f2f2f2;
+    position: absolute;
+    font-size: 280px;
+    line-height: 280px;
+    z-index: 0;
+    top: -40px;
+    right: 35px;
+  }
 
   @media (min-width: @desktop-width) {
     right: 0;
