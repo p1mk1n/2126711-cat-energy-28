@@ -1,19 +1,20 @@
-.icon {
+.burger {
   width: 24px;
   height: 16px;
-  margin: 10px 10px;
+  margin: 10px;
   position: relative;
   cursor: pointer;
   display: inline-block;
   border: none;
   background-color: #ffffff;
+  z-index: 10;
 
   @media (min-width: @tablet-width) {
     display: none;
   }
 }
 
-.icon .icon__item {
+.burger .burger__item {
   background-color: #000000;
   position: absolute;
   transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
@@ -22,44 +23,44 @@
   transition-duration: 500ms;
 }
 
-.icon .icon__item:nth-child(1) {
+.burger .burger__item:nth-child(1) {
   top: -1px;
   left: 0;
 }
 
-.icon .icon__item:nth-child(2) {
+.burger .burger__item:nth-child(2) {
   top: 13px;
   left: 0;
   opacity: 1;
 }
 
-.icon .icon__item:nth-child(3) {
+.burger .burger__item:nth-child(3) {
   bottom: 8px;
   left: 0;
 }
 
-.icon:not(.open):hover .icon__item:nth-child(1) {
+.burger:not(.open):hover .burger__item:nth-child(1) {
   transform: rotate(-3deg) scaleY(1.1);
 }
 
-.icon:not(.open):hover .icon__item:nth-child(2) {
+.burger:not(.open):hover .burger__item:nth-child(2) {
   transform: rotate(3deg) scaleY(1.1);
 }
 
-.icon:not(.open):hover .icon__item:nth-child(3) {
+.burger:not(.open):hover .burger__item:nth-child(3) {
   transform: rotate(-4deg) scaleY(1.1);
 }
 
-.icon.open .icon__item:nth-child(1) {
+.burger.open .burger__item:nth-child(1) {
   transform: rotate(45deg);
   top: 8px;
 }
 
-.icon.open .icon__item:nth-child(2) {
+.burger.open .burger__item:nth-child(2) {
   opacity: 0;
 }
 
-.icon.open .icon__item:nth-child(3) {
+.burger.open .burger__item:nth-child(3) {
   transform: rotate(-45deg);
   top: 8px;
 }

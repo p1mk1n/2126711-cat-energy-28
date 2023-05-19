@@ -27,11 +27,13 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+  counter-reset: num;
 
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 37px 137px;
+    gap: 77px 137px;
+    margin-bottom: 47px;
   }
 
   @media (min-width: @desktop-width) {
@@ -47,9 +49,22 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
+    position: relative;
   }
+}
+
+.work-description__item::after {
+  content: counter(num);
+  counter-increment: num;
+  color: #f2f2f2;
+  position: absolute;
+  font-size: 280px;
+  line-height: 280px;
+  z-index: 0;
+  top: -40px;
+  right: 35px;
 
   @media (min-width: @desktop-width) {
-
+    right: 0;
   }
 }

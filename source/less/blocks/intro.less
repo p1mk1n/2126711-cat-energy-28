@@ -3,8 +3,9 @@
 }
 
 .intro__background-wrapper {
-  background: rgba(104, 183, 56, 0.85) url("../img/index-background.jpg") no-repeat center;
-  width: 320px;
+  background: rgba(104, 183, 56, 0.85) url("../img/index-background-mobile.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
   height: 302px;
   position: absolute;
   top: 0;
@@ -42,9 +43,12 @@
 
 .intro__wrapper {
   .container();
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: @tablet-width) {
     padding: 0 110px;
+    display: block;
   }
 
   @media (min-width: @desktop-width) {
@@ -101,6 +105,7 @@
 
 .intro__image {
   position: relative;
+  align-self: center;
 
   @media (min-width: @tablet-width) {
     position: absolute;
@@ -121,7 +126,7 @@
   padding: 8px 44px;
   font-size: 14px;
   line-height: 18px;
-  width: 280px;
+  width: 100%;
   text-transform: uppercase;
   display: block;
 
