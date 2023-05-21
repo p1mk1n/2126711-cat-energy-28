@@ -10,6 +10,10 @@
   position: absolute;
   top: 0;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
+
   @media (min-width: @tablet-width) {
     background: none;
   }
@@ -19,8 +23,12 @@
     background-size: cover;
     height: 694px;
     right: 0;
-    top: -111px;
+    top: -117px;
     width: 50%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
   }
 }
 

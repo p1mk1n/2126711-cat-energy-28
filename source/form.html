@@ -7,14 +7,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="icon" type="image/image/svg+xml" href="img/favicons/favicon.svg">
+  <link rel="manifest" href="manifest.webmanifest">
   <title>Сделать заказ Cat Energy</title>
 </head>
 
 <body class="page__body">
   <header class="page__header header">
-    <a class="header__logo" href="index.html">
-      <img src="img/logo.svg" width="180" height="38">
+    <a class="header__logo">
+      <picture>
+        <source media="(min-width: 1220px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img src="img/logo-mobile.svg" width="180" height="38" alt="Логотип магазина Cat Energy.">
+      </picture>
     </a>
 
     <nav class="header__navigation navigation navigation--closed navigation--nojs">
