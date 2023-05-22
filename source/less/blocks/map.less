@@ -1,12 +1,5 @@
 .map {
   margin: 0 auto;
-
-  @media (min-width: @desktop-width) {
-    background: #f2f2f2 url(../img/map-3.jpg) no-repeat center;
-    background-size: cover;
-    min-width: 1440px;
-    min-height: 400px;
-  }
 }
 
 .map__wrapper {
@@ -83,39 +76,26 @@
 }
 
 .map__image {
-  background: #f2f2f2 url(../img/map-1.jpg) no-repeat center;
+  background: #f2f2f2 url("../img/map-1.jpg") no-repeat center;
   background-size: cover;
-  min-width: 320px;
+  width: 100%;
   height: 362px;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    background: #f2f2f2 url(../img/map-2.jpg) no-repeat center;
-    background-size: cover;
-    min-width: 768px;
+    background: #f2f2f2 url("../img/map-2.jpg") no-repeat center;
     height: 400px;
   }
 
   @media (min-width: @desktop-width) {
-    background: none;
-    width: 0;
-    height: 0;
+    background: #f2f2f2 url("../img/map-3.jpg") no-repeat center;
   }
+
 }
 
-.map__iframe {
+.map__image iframe {
   display: flex;
   background-position: center;
-  min-width: 320px;
-  height: 362px;
-  margin: 0 auto;
-
-  @media (min-width: @tablet-width) {
-    min-width: 768px;
-    height: 400px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 1440px;
-  }
+  width: 100%;
+  height: 100%;
 }

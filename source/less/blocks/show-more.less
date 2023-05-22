@@ -2,7 +2,7 @@
   padding: 78px 0 25px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   text-align: center;
   border-top: solid 1px #ebebeb;
@@ -10,12 +10,13 @@
 
   @media (min-width: @tablet-width) {
     border: 2px solid #f2f2f2;
-    padding: 78px 37px 25px;
-    max-width: 430px;
+    padding: 38px 37px 39px;
+    height: 412px;
+    align-self: flex-end;
   }
 
   @media (min-width: @desktop-width) {
-
+    height: 440px;
   }
 }
 
@@ -80,13 +81,12 @@
   background-color: #f2f2f2;
   padding: 10px 94px;
   margin-bottom: 20px;
+  width: 100%;
+
 
   @media (min-width: @tablet-width) {
     padding: 10px 35px;
-  }
-
-  @media (min-width: @desktop-width) {
-
+    margin-bottom: 0;
   }
 
   &:hover {

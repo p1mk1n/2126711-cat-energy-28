@@ -1,21 +1,18 @@
 .intro {
   position: relative;
-
-
-  @media (min-width: @tablet-width) {
-
-  }
-
-  @media (min-width: @desktop-width) {
-  }
 }
 
 .intro__background-wrapper {
-  background: rgba(104, 183, 56, 0.85) url("../img/index-background.jpg") no-repeat center;
-  width: 320px;
+  background: rgba(104, 183, 56, 0.85) url("../img/index-background-mobile.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
   height: 302px;
   position: absolute;
   top: 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     background: none;
@@ -26,8 +23,12 @@
     background-size: cover;
     height: 694px;
     right: 0;
-    top: -111px;
+    top: -117px;
     width: 50%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
   }
 }
 
@@ -44,16 +45,18 @@
   @media (min-width: @desktop-width) {
     content: "";
     .zero-centered();
-    position: absolute;
     background-color: rgba(104, 183, 56, 0.85);
   }
 }
 
 .intro__wrapper {
   .container();
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: @tablet-width) {
     padding: 0 110px;
+    display: block;
   }
 
   @media (min-width: @desktop-width) {
@@ -110,14 +113,19 @@
 
 .intro__image {
   position: relative;
+  align-self: center;
 
   @media (min-width: @tablet-width) {
     position: absolute;
     z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   @media (min-width: @desktop-width) {
-
+    right: 550px;
+    top: 120px;
+    z-index: 2;
   }
 }
 
@@ -126,7 +134,7 @@
   padding: 8px 44px;
   font-size: 14px;
   line-height: 18px;
-  width: 280px;
+  width: 100%;
   text-transform: uppercase;
   display: block;
 
@@ -134,7 +142,7 @@
     padding: 14px 26px;
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 150px;
+    margin-bottom: 250px;
     width: 244px;
   }
 
