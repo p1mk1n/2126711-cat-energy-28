@@ -1,5 +1,5 @@
 .fieldset {
-  padding: 20px 0;
+  padding: 20px 0 0;
   border: none;
 }
 
@@ -44,12 +44,12 @@
   @media (min-width: @tablet-width) {
     padding: 0 38px;
     width: 600px;
-    margin-left: 5%;
+    margin-left: 4%;
   }
 
   @media (min-width: @desktop-width) {
     padding: 0 40px;
-    margin-left: 6%;
+    margin-left: 5%;
   }
 }
 
@@ -119,10 +119,17 @@
   padding: 9px 12px 9px 15px;
   text-transform: uppercase;
   resize: none;
+  border-radius: 0;
+  border: solid 1px #e7e7e7;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
     padding: 10px 19px;
+  }
+
+  &:focus {
+    border: solid 1px #e7e7e7;
+    border-radius: 0;
   }
 }

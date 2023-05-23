@@ -39,6 +39,10 @@
   background-image: url("../img/radio-dot.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: @tablet-width) {
+    background-size: convert(19px, 19px);
+  }
 }
 
 .radio__text:hover::before {

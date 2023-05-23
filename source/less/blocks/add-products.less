@@ -3,7 +3,6 @@
 
   @media (min-width: @desktop-width) {
     display: flex;
-    flex-wrap: wrap;
   }
 }
 
@@ -60,10 +59,11 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     border: solid 1px #cdcdcd;
+    width: 100%;
   }
 
   @media (min-width: @desktop-width) {
@@ -74,7 +74,7 @@
 
 .add-products__item {
   border-bottom: solid 1px #cdcdcd;
-  border-top: solid 1px #cdcdcd;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     padding: 0 38px;
@@ -87,6 +87,28 @@
   }
 }
 
+.add-products__item:first-child {
+  border-top: solid 1px #cdcdcd;
+
+  @media (min-width: @tablet-width) {
+    border-top: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    border-top: solid 1px #cdcdcd;
+  }
+}
+
+.add-products__item:last-child {
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    border-bottom: solid 1px #cdcdcd;
+  }
+}
+
 .add-products__button {
   .button();
   font-size: 16px;
@@ -94,6 +116,7 @@
   padding: 10px 109px;
   margin-bottom: 20px;
   display: block;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     width: 100%;
@@ -141,29 +164,33 @@
 
 .add-products__present {
   margin-top: 35px;
-  width: 280px;
-  height: 290px;
+  min-width: 280px;
+  min-height: 289px;
   background: rgba(104, 183, 56, 0.85) url("../img/present-background.jpg") no-repeat center;
-  .zero-centered();
+  background-size: cover;
   position: relative;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/present-background@2x.jpg");
+    background-size: cover;
   }
 
   @media (min-width: @tablet-width) {
     background: rgba(104, 183, 56, 0.85) url("../img/present-background-2.jpg") no-repeat center;
-    width: 707px;
-    height: 200px;
+    background-size: cover;
+    min-width: 707px;
+    min-height: 200px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/present-background-2@2x.jpg");
+      background-size: cover;
     }
   }
 
   @media (min-width: @desktop-width) {
     background: rgba(104, 183, 56, 0.85) url("../img/present-background.jpg") no-repeat center;
     width: 245px;
+    min-width: 0;
     height: 288px;
     margin-top: 0;
     margin-left: auto;

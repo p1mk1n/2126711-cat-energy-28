@@ -1,6 +1,6 @@
 .form {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
 }
 
 .form__fieldset {
@@ -8,16 +8,22 @@
 }
 
 .form__button-wrapper {
-  padding: 20px 0;
+  .form-container();
   display: flex;
   flex-direction: column;
   justify-content: center;
-  .form-container();
+  padding: 34px 20px 32px;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    padding: 54px 70px 72px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 61px 110px 82px;
   }
 }
 
@@ -27,16 +33,18 @@
   padding: 7px 60px;
   margin-bottom: 20px;
   margin-right: 60px;
-  min-width: 280px;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     padding: 13px 45px;
     margin-bottom: 0;
+    width: 280px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 13px 188px;
+    width: 568px;
   }
 }
 

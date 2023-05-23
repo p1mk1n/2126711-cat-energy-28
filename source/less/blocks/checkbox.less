@@ -38,6 +38,10 @@
   background-image: url("../img/checkbox-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: @tablet-width) {
+    background-size: convert(25px, 20px);
+  }
 }
 
 .checkbox__text:hover::before {

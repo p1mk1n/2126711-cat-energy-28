@@ -1,18 +1,22 @@
 .example {
   background-color: #eaeaea;
   display: flex;
+  padding: 25px 0 40px;
 
   @media (min-width: @tablet-width) {
+    padding: 43px 0 101px;
     background: linear-gradient(#ffffff 60%, #ffffff 60%, #eaeaea 60%, #eaeaea 40%);
   }
 
   @media (min-width: @desktop-width) {
+    padding: 0 0 75px;
     background: linear-gradient(#ffffff 20%, #ffffff 20%, #eaeaea 20%, #eaeaea 80%);
   }
 }
 
 .example__wrapper {
   .container();
+  width: 100%;
 
   @media (min-width: @desktop-width) {
     display: grid;
@@ -39,17 +43,16 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
-  padding-top: 25px;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    padding-top: 43px;
     grid-column: 1/ -1;
+    margin-bottom: 63px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 69px;
+    margin-bottom: 146px;
   }
 }
 
@@ -65,22 +68,30 @@
     font-size: 16px;
     line-height: 24px;
     width: 708px;
-    padding-bottom: 55px;
+    margin-bottom: 54px;
     grid-column: 1/ -1;
   }
 
   @media (min-width: @desktop-width) {
     width: 436px;
+    margin-bottom: 69px;
   }
 }
 
 .example__frame-wrapper {
   display: flex;
+  margin: 0 auto;
   margin-bottom: 34px;
   gap: 32px;
 
   @media (min-width: @tablet-width) {
     gap: 42px;
+    margin: 0;
+    margin-bottom: 104px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 60px;
   }
 }
 
@@ -104,6 +115,8 @@
   line-height: 20px;
   text-transform: uppercase;
   width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -115,7 +128,7 @@
 
   @media (min-width: @desktop-width) {
     width: 350px;
-    text-align: center;
+    text-align: left;
     margin-left: 0;
   }
 }
@@ -141,14 +154,15 @@
   font-size: 14px;
   line-height: 14px;
   position: absolute;
-  top: 47px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
   width: 87px;
   background-color: #eaeaea;
 
   @media (min-width: @tablet-width) {
     background-color: #ffffff;
-    min-width: 140px;
-    top: 60px;
+    width: 140px;
   }
 
   @media (min-width: @desktop-width) {
@@ -159,14 +173,5 @@
 .example__slider {
   background-color: transparent;
   margin: 0 auto;
-  margin-bottom: 40px;
-
-  @media (min-width: @tablet-width) {
-    margin-bottom: 100px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-bottom: 85px;
-  }
 }
 

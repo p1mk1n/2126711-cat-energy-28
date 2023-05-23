@@ -1,7 +1,3 @@
-.main-catalog {
-
-}
-
 .main-catalog__main-wrapper {
   .container();
 }
@@ -30,17 +26,12 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  grid-column: 1/ -1;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 30px;
     font-size: 60px;
     line-height: 60px;
     border-bottom: none;
-  }
-
-  @media (min-width: @desktop-width) {
-
   }
 }
 
@@ -49,6 +40,7 @@
   padding: 19px 0 25px;
   display: flex;
   flex-wrap: wrap;
+  min-width: 0;
 
   @media (min-width: @tablet-width) {
     display: flex;
