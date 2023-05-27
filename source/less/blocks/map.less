@@ -3,7 +3,7 @@
 }
 
 .map__wrapper {
-  .container();
+  .form-container();
 
   @media (min-width: @desktop-width) {
     position: relative;
@@ -17,7 +17,7 @@
   justify-content: space-between;
 
   @media (min-width: @tablet-width) {
-    padding: 59px 0 56px;
+    padding: 56px 0 56px;
     flex-wrap: wrap;
   }
 
@@ -31,7 +31,15 @@
   }
 }
 
-.map__adress-wrapper--inner {
+.map__wrapper--inner {
+  background-color: #f2f2f2;
+
+  @media (min-width: @desktop-width) {
+    background-color: #ffffff;
+  }
+}
+
+.map__wrapper--inner .map__adress-wrapper {
   background-color: #f2f2f2;
 
   @media (min-width: @desktop-width) {
@@ -51,6 +59,15 @@
     font-size: 20px;
     line-height: 26px;
     width: 171px;
+  }
+}
+
+.map__contacts-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
   }
 }
 

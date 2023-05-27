@@ -1,5 +1,6 @@
 .field {
   margin: 0;
+  width: 100%;
 }
 
 .field__label {
@@ -7,6 +8,7 @@
   line-height: 18px;
   color: #444444;
   margin-right: 13px;
+  white-space: nowrap;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -14,7 +16,16 @@
   }
 }
 
+.fieldset__list--row .field__label {
+  margin-right: 10px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 20px;
+  }
+}
+
 .field__input {
+  font-family: inherit;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
@@ -22,8 +33,10 @@
   font-weight: 400;
   padding: 14px 15px 13px;
   border: solid 1px #e7e7e7;
-  flex-grow: 1;
+  width: 100%;
+  height: 45px;
   border-radius: 0;
+  outline: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -34,15 +47,18 @@
     border: solid 1px #cdcdcd;
   }
 
-  &:focus {
-    border: solid 1px #444444;
-    box-shadow: inset 0 0 0 2px #444444;
-    border-radius: 0;
-  }
-
-  &:not(:valid) {
+  &:invalid {
     border: solid 1px transparent;
     box-shadow: inset 0 0 0 2px #ff8282;
+  }
+
+  &:invalid:not(:focus):placeholder-shown {
+    border: solid 1px #e7e7e7;
+  }
+
+  &:focus {
+    box-shadow: inset 0 0 0 2px #444444;
+    border-radius: 0;
   }
 }
 
@@ -64,8 +80,16 @@
   padding-right: 40px;
 }
 
-.field__input--telefone {
+.field__input--telephone {
   color: #444444;
   padding-right: 40px;
+}
+
+.field__input:invalid + svg {
+  color: #ff8282;
+}
+
+.field__input:focus + svg {
+  color: #68b738;
 }
 

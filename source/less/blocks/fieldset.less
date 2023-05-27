@@ -1,16 +1,26 @@
 .fieldset {
-  padding: 20px 0 0;
+  padding: 0;
   border: none;
 }
 
 .fieldset__wrapper {
   .form-container();
+  padding-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 67px;
+  }
 }
 
 .fieldset__title {
   padding: 0;
-  color: #000000;
+  margin: 0;
   margin-bottom: 35px;
+  color: #000000;
   font-size: 24px;
   line-height: 26px;
   position: relative;
@@ -18,6 +28,7 @@
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 62px;
   }
 }
 
@@ -60,17 +71,49 @@
   display: flex;
   flex-direction: column;
   gap: 14px;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     gap: 20px;
   }
 }
 
+.fieldset__list--border {
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 22px 0 19px;
+
+  @media (min-width: @tablet-width) {
+    border: 1px solid #e7e7e7;
+    padding: 30px 28px;
+  }
+}
+
+.fieldset__list--row {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 14px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+  }
+}
+
 .fieldset__list--checkbox {
+  padding-top: 5px;
+  padding-bottom: 17px;
+
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -79,34 +122,10 @@
   }
 }
 
-.fieldset__list--row {
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: @desktop-width) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 80px;
-  }
-}
-
-.fieldset__list--border {
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
-  padding: 25px;
-
-  @media (min-width: @tablet-width) {
-    border: 1px solid #e7e7e7;
-    padding: 30px;
-  }
-}
-
 .fieldset__item {
-  margin: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
-  flex-grow: 1;
 }
 
 .fieldset__textarea {
@@ -121,11 +140,14 @@
   resize: none;
   border-radius: 0;
   border: solid 1px #e7e7e7;
+  margin-top: 3px;
+  outline: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
     padding: 10px 19px;
+    margin-top: 14px;
   }
 
   &:focus {

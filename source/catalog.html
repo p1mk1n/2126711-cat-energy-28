@@ -14,7 +14,7 @@
 </head>
 
 <body class="page__body">
-  <header class="page__header header">
+  <header class="page__header header header--nojs">
     <a class="header__logo">
       <picture>
         <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
@@ -23,11 +23,11 @@
       </picture>
     </a>
 
-    <nav class="header__navigation navigation navigation--closed navigation--nojs">
-      <button class="navigation__button burger" type="button">
-        <span class="burger__item"></span>
-      </button>
-      <div class="navigation__wrapper">
+    <button class="header__button burger" type="button">
+      <span class="burger__item"></span>
+    </button>
+
+    <nav class="header__navigation navigation navigation--closed">
         <ul class="navigation__list">
           <li class="navigation__item">
             <a class="navigation__link" href="index.html">Главная</a>
@@ -39,7 +39,6 @@
             <a class="navigation__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
-      </div>
     </nav>
   </header>
 
@@ -266,26 +265,34 @@
         <ul class="add-products__list">
           <li class="add-products__item">
             <h3 class="add-products__item-title">Сахарозаменитель</h3>
-            <span class="add-products__item-text">1 упаковка (100 г)</span>
-            <span class="add-products__item-text">200 ₽</span>
+            <div class="add-products__item-wrapper">
+              <span class="add-products__item-text">1 упаковка (100 г)</span>
+              <span class="add-products__item-text">200 ₽</span>
+            </div>
             <a class="add-products__button" href="form.html">Заказать</a>
           </li>
           <li class="add-products__item">
             <h3 class="add-products__item-title">Питьевая вода</h3>
-            <span class="add-products__item-text">5 литров</span>
-            <span class="add-products__item-text">50 ₽</span>
+            <div class="add-products__item-wrapper">
+              <span class="add-products__item-text">5 литров</span>
+              <span class="add-products__item-text">50 ₽</span>
+            </div>
             <a class="add-products__button" href="form.html">Заказать</a>
           </li>
           <li class="add-products__item">
             <h3 class="add-products__item-title">Молоко</h3>
-            <span class="add-products__item-text">1 литров</span>
-            <span class="add-products__item-text">100 ₽</span>
+            <div class="add-products__item-wrapper">
+              <span class="add-products__item-text">1 литров</span>
+              <span class="add-products__item-text">100 ₽</span>
+            </div>
             <a class="add-products__button" href="form.html">Заказать</a>
           </li>
           <li class="add-products__item">
             <h3 class="add-products__item-title">Витамины</h3>
-            <span class="add-products__item-text">1 упаковка (30 г)</span>
-            <span class="add-products__item-text">300 ₽</span>
+            <div class="add-products__item-wrapper">
+              <span class="add-products__item-text">1 упаковка (30 г)</span>
+              <span class="add-products__item-text">300 ₽</span>
+            </div>
             <a class="add-products__button" href="form.html">Заказать</a>
           </li>
         </ul>
@@ -297,10 +304,13 @@
     </section>
 
     <section class="map">
-      <div class="map__wrapper">
+      <div class="map__wrapper map__wrapper--inner">
         <div class="map__adress-wrapper">
           <h2 class="map__header">Приглашаем к сотрудничеству дилеров!</h2>
-          <p class="map__contacts">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <div class="map__contacts-wrapper">
+            <span class="map__contacts">ул. Большая Конюшенная, д. 19/8</span>
+            <span class="map__contacts">Санкт-Петербург</span>
+          </div>
         </div>
       </div>
       <div class="map__image">
