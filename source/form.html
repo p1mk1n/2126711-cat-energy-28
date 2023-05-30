@@ -103,7 +103,8 @@
               <label class="field__label" for="e-mail">E-MAIL:*</label>
               <div class="field__wrapper">
                 <input class="field__input field__input--email " type="email" id="e-mail"
-                  placeholder="kuklachev@gmail.com" name="e-mail" inputmode="email" autocomplete="email" required>
+                  placeholder="kuklachev@gmail.com" name="e-mail" inputmode="email"
+                  pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" autocomplete="email" required>
                 <svg class="field__input-icon" width="19" height="14">
                   <use href="img/sprite.svg#email-icon"></use>
                 </svg>
