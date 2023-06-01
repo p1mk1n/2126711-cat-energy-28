@@ -56,6 +56,11 @@
     border: solid 1px #cdcdcd;
   }
 
+  &:focus:invalid {
+    border: solid 1px #ff8282;
+    box-shadow: inset 0 0 0 1px #ff8282;
+  }
+
   &:focus {
     box-shadow: inset 0 0 0 1px #444444;
     border: solid 1px #444444;
@@ -77,12 +82,12 @@
 
 .field__input--email {
   color: #444444;
-  padding-right: 40px;
+  padding-right: 50px;
 }
 
 .field__input--telephone {
   color: #444444;
-  padding-right: 40px;
+  padding-right: 50px;
 }
 
 .field__input:invalid:not(:placeholder-shown) + .field__input-icon {
@@ -95,4 +100,8 @@
 
 .field__input:valid + .field__input-icon {
   color: #68b738;
+}
+
+.field__input:focus:invalid + .field__input-icon {
+  color: #ff8282;
 }

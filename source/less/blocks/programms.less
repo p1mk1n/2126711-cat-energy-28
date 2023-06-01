@@ -148,6 +148,7 @@
   display: flex;
   align-items: center;
   padding-top: 15px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -165,5 +166,31 @@
 }
 
 .programms__link-text {
-  margin-right: 25px;
+  width: 103px;
+  z-index: 2;
+  background-color: #f2f2f2;
+
+  @media (min-width: @tablet-width) {
+    width: 133px;
+  }
 }
+
+.programms__link-icon {
+  overflow: hidden;
+  position: absolute;
+  left: 97px;
+
+  @media (min-width: @tablet-width) {
+    left: 127px;
+  }
+}
+
+.programms__link:active .programms__link-icon,
+.programms__link:hover .programms__link-icon {
+  left: 103px;
+
+  @media (min-width: @tablet-width) {
+    left: 133px;
+  }
+}
+
