@@ -93,11 +93,24 @@
 }
 
 .map__image {
-  background: #f2f2f2 url("../img/map-1.jpg") no-repeat center;
-  background-size: cover;
   width: 100%;
   height: 362px;
-  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    height: 400px;
+  }
+}
+
+.map__image iframe {
+  display: flex;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.map--nojs .map__image {
+  background: #f2f2f2 url("../img/map-1.jpg") no-repeat center;
+  background-size: cover;
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/map-2.jpg");
@@ -109,9 +122,6 @@
   }
 }
 
-.map__image iframe {
-  display: flex;
-  background-position: center;
-  width: 100%;
-  height: 100%;
+.map--nojs iframe {
+  display: none;
 }
