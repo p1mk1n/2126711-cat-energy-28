@@ -7,13 +7,14 @@
   border: none;
   background-color: #ffffff;
   z-index: 10;
+  margin-left: auto;
 
   @media (min-width: @tablet-width) {
     display: none;
   }
 }
 
-.burger .burger__item {
+.burger__item {
   background-color: #000000;
   position: absolute;
   transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
@@ -24,7 +25,7 @@
   left: 0;
 }
 
-.burger .burger__item::after {
+.burger__item::after {
   content: "";
   background-color: #000000;
   position: absolute;
@@ -37,7 +38,7 @@
   opacity: 1;
 }
 
-.burger .burger__item::before {
+.burger__item::before {
   content: "";
   background-color: #000000;
   position: absolute;

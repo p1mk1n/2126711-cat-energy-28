@@ -6,8 +6,8 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   min-width: 132px;
 }
 
@@ -26,7 +26,7 @@
   }
 
   &:active {
-    color: lighten(#68b738;35%);
+    color: rgba(104, 183, 56, 0.35);
   }
 }
 
