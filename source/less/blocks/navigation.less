@@ -5,6 +5,7 @@
 
   @media (min-width: @tablet-width) {
     max-width: 70%;
+    justify-content: flex-end;
   }
 
   @media (min-width: @desktop-width) {
@@ -154,11 +155,11 @@
   }
 }
 
-.navigation--opened .navigation__list {
+.navigation--opened {
   display: block;
 }
 
-.navigation--closed .navigation__list {
+.navigation--closed {
   display: none;
 
   @media (min-width: @tablet-width) {
