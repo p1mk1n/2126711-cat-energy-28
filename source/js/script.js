@@ -4,7 +4,7 @@ const header = document.querySelector('.header')
 const icon = document.querySelector('.burger');
 const map = document.querySelector('.map');
 
-// header.classList.remove('header--nojs');
+header.classList.remove('header--nojs');
 map.classList.remove('map--nojs');
 
 navToggle.addEventListener('click', function () {
