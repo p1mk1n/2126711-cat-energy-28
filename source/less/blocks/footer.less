@@ -45,7 +45,7 @@
 
 .footer__social {
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
 .footer__htmlacademy-link {
@@ -66,21 +66,21 @@
   font-size: 16px;
   line-height: 19px;
   margin: 0;
-
-  &:active {
-    opacity: 30%;
-  }
 }
 
 .footer__htmlacademy-image {
   color: #666666;
+}
 
-  &:hover,
-  &:focus {
-    color: #68b738;
-  }
+.footer__htmlacademy-link:active .footer__htmlacademy-text {
+  opacity: 30%;
+}
 
-  &:active {
-    opacity: 30%;
-  }
+.footer__htmlacademy-link:hover .footer__htmlacademy-image,
+.footer__htmlacademy-link:focus .footer__htmlacademy-image {
+  color: #68b738;
+}
+
+.footer__htmlacademy-link:active .footer__htmlacademy-image {
+  opacity: 30%;
 }

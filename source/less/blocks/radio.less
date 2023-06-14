@@ -51,10 +51,10 @@
   border: solid 1px #bababa;
 }
 
-.radio__input:disabled {
-  opacity: 30%;
+input:focus + .radio__text {
+  opacity: 70%;
 }
 
-.radio__input:disabled::before {
+input:disabled + .radio__text {
   opacity: 30%;
 }

@@ -171,6 +171,7 @@
   width: 103px;
   z-index: 2;
   background-color: #f2f2f2;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     width: 133px;
@@ -181,6 +182,7 @@
   overflow: hidden;
   position: absolute;
   left: 95px;
+  transition: 250ms ease-in;
 
   @media (min-width: @tablet-width) {
     left: 125px;
@@ -190,6 +192,7 @@
 .programms__link:active .programms__link-icon,
 .programms__link:hover .programms__link-icon {
   left: 103px;
+  transition: 250ms ease-out;
 
   @media (min-width: @tablet-width) {
     left: 133px;

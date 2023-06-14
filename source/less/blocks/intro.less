@@ -1,5 +1,9 @@
 .intro {
   position: relative;
+
+  @media (min-width: @desktop-width) {
+    position: inherit;
+  }
 }
 
 .intro__background-wrapper {
@@ -38,7 +42,7 @@
     background-size: cover;
     height: 694px;
     right: 0;
-    top: -117px;
+    top: 0;
     width: 50%;
 
     @media (min-resolution: 2dppx) {
