@@ -8,7 +8,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 20px 0;
+  padding: 20px 0 20px;
   align-items: flex-start;
 
   @media (min-width: @tablet-width) {
@@ -19,7 +19,7 @@
   @media (min-width: @desktop-width) {
     gap: 80px;
     flex-direction: row;
-    padding: 70px 0;
+    padding: 70px 0 71px;
   }
 }
 
@@ -34,7 +34,6 @@
 
   @media (min-width: @tablet-width) {
     flex-direction: column;
-    align-items: flex-start;
     width: 100%;
     padding: 77px 62px 57px 53px;
   }
@@ -43,23 +42,24 @@
     flex-direction: row;
     align-items: center;
     max-width: 570px;
-    padding: 47px 61px 59px 52px;
+    padding: 46px 61px 59px 34px;
   }
 }
 
 .programms__image {
-  margin-right: 12px;
+  margin-right: 5px;
   position: relative;
   width: 67px;
   height: 50px;
+  left: -6px;
 
   @media (min-width: @tablet-width) {
     margin-right: 0;
     position: absolute;
-    right: 62px;
+    left: 412px;
     top: 91px;
     width: 269px;
-    height: 194px;
+    height: 200px;
   }
 
   @media (min-width: @desktop-width) {
@@ -88,7 +88,8 @@
   @media (min-width: @desktop-width) {
     width: 100px;
     height: 100px;
-    left: 115px;
+    left: 102px;
+    top: 47px;
   }
 }
 
@@ -105,11 +106,13 @@
   text-transform: uppercase;
   font-weight: 400;
   margin: 0;
+  padding-top: 5px;
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 24px;
+    padding-top: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -124,7 +127,8 @@
   margin: 0;
   color: #444444;
   border-bottom: solid 1px #d9d9d9;
-  padding-bottom: 23px;
+  padding-bottom: 14px;
+  padding-top: 15px;
 
   @media (min-width: @tablet-width) {
     width: 340px;
@@ -132,11 +136,13 @@
     line-height: 24px;
     border-bottom: none;
     margin-bottom: 52px;
+    padding: 0;
   }
 
   @media (min-width: @desktop-width) {
-    width: 455px;
-    margin: 39px 0 27px;
+    width: 470px;
+    margin: 0;
+    padding: 43px 0 27px 17px;
   }
 }
 
@@ -149,13 +155,17 @@
   line-height: 16px;
   display: flex;
   align-items: center;
-  padding-top: 15px;
+  padding-top: 16px;
   position: relative;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
     padding-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 19px;
   }
 
   &:hover {
@@ -187,6 +197,10 @@
   @media (min-width: @tablet-width) {
     left: 125px;
   }
+
+  @media (min-width: @desktop-width) {
+    left: 143px;
+  }
 }
 
 .programms__link:active .programms__link-icon,
@@ -196,5 +210,9 @@
 
   @media (min-width: @tablet-width) {
     left: 133px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 151px;
   }
 }

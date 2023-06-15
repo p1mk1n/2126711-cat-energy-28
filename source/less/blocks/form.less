@@ -9,7 +9,7 @@
   padding-bottom: 26px;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
+  gap: 23px;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 75px;
@@ -52,22 +52,24 @@
 .form__submit-button {
   .button();
   border: none;
-  padding: 7px 60px;
-  margin-bottom: 20px;
+  padding: 10px 70px;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 21px;
   width: 100%;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
-    padding: 13px 45px;
+    padding: 16px 45px;
     margin-bottom: 0;
-    margin-right: 64px;
-    width: 280px;
+    margin-right: 61px;
+    width: 282px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 13px 188px;
-    margin-right: 84px;
-    width: 568px;
+    padding: 16px 188px;
+    margin-right: 81px;
+    width: 569px;
   }
 }
 
@@ -81,5 +83,10 @@
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
+    padding-bottom: 6px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 5px;
   }
 }

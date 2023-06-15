@@ -3,7 +3,7 @@
 
   @media (min-width: @tablet-width) {
     border-bottom: 1px solid #e6e6e6;
-    padding-bottom: 104px;
+    padding-bottom: 103px;
   }
 
   @media (min-width: @desktop-width) {
@@ -15,6 +15,7 @@
 .work-description__wrapper {
   .container();
   width: 100%;
+  padding-left: 21px;
 }
 
 .work-description__title {
@@ -41,7 +42,7 @@
 
   @media (min-width: @tablet-width) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 77px 137px;
+    gap: 134px 62px;
   }
 
   @media (min-width: @desktop-width) {
@@ -70,11 +71,24 @@
     font-size: 280px;
     line-height: 280px;
     z-index: 0;
-    top: -40px;
-    right: 35px;
+    top: -39px;
+    right: 75px;
   }
 
   @media (min-width: @desktop-width) {
-    right: 0;
+    right: -2px;
+    top: -40px;
+    font-size: 280px;
+    line-height: 280px;
+  }
+}
+
+.work-description__item:first-child::after {
+  @media (min-width: @tablet-width) {
+    right: 97px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 22px;
   }
 }
