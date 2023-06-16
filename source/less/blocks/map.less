@@ -3,6 +3,12 @@
 }
 
 .map__wrapper {
+  .form-container();
+
+  @media (min-width: @tablet-width) {
+    padding: 0 70px;
+  }
+
   @media (min-width: @desktop-width) {
     position: relative;
   }
@@ -11,11 +17,11 @@
 .map__adress-wrapper {
   background-color: #ffffff;
   display: flex;
-  padding: 26px 20px 26px;
+  padding: 26px 0 26px;
   justify-content: space-between;
 
   @media (min-width: @tablet-width) {
-    padding: 57px 70px 61px;
+    padding: 57px 0 61px;
     flex-wrap: wrap;
   }
 
