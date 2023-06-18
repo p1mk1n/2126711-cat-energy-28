@@ -98,7 +98,9 @@
 
       <fieldset class="form__fieldset fieldset">
         <h2 class="fieldset__title">
-          <span class="fieldset__title-text">Контактные данные (владельца кота)</span>
+          <div class="fieldset__wrapper">
+            <span class="fieldset__title-text">Контактные данные (владельца кота)</span>
+          </div>
         </h2>
         <div class="fieldset__wrapper">
           <ul class="fieldset__list fieldset__list--row">
@@ -130,17 +132,22 @@
 
       <fieldset class="form__fieldset fieldset">
         <h2 class="fieldset__title">
-          <span class="fieldset__title-text">Комментарий</span>
+          <div class="fieldset__wrapper">
+            <span class="fieldset__title-text">Комментарий</span>
+          </div>
         </h2>
         <div class="fieldset__wrapper">
-          <textarea class="fieldset__textarea" placeholder="Расскажите обо всех повадках кота" rows="7" cols="35"
+          <label class="visually-hidden" for="textarea">Комментарий</label>
+            <textarea class="fieldset__textarea" placeholder="Расскажите обо всех повадках кота" rows="7" cols="35"
             id="textarea"></textarea>
         </div>
       </fieldset>
 
       <fieldset class="form__fieldset fieldset">
         <h2 class="fieldset__title">
-          <span class="fieldset__title-text">Дополнительно</span>
+          <div class="fieldset__wrapper">
+            <span class="fieldset__title-text">Дополнительно</span>
+          </div>
         </h2>
         <div class="fieldset__wrapper">
           <ul class="fieldset__list fieldset__list--checkbox">
