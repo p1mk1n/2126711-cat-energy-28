@@ -85,6 +85,11 @@
   border: solid 2px #666666;
   cursor: pointer;
   z-index: 30;
+
+  &:focus {
+    color: #68b738;
+    border: solid 2px #68b738;
+  }
 }
 
 .slider__dragme:hover .slider__dragme-circle {
@@ -95,4 +100,8 @@
 .slider__dragme:active .slider__dragme-circle {
   color: #5eaa2f;
   border: solid 2px #5eaa2f;
+}
+
+.slider__dragme:focus + .slider__dragme-circle {
+  background-color: #68b738;
 }

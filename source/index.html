@@ -26,7 +26,7 @@
       </picture>
     </a>
 
-    <button class="header__button burger" type="button">
+    <button class="header__button burger" type="button" aria-label="Кнопка меню">
       <span class="burger__item"></span>
     </button>
 
@@ -186,12 +186,12 @@
                 alt="Фото Бориса после приёма Cat Energy Slim">
             </picture>
           </div>
-          <div class="slider__dragme" aria-label="Бегунок слайдера `До` и `После`">
-            <div class="slider__dragme-circle">
+          <div class="slider__dragme">
+            <button class="slider__dragme-circle" type="button"  aria-label="Бегунок слайдера `До` и `После`">
               <svg width="24" height="18">
                 <use href="img/sprite.svg#slider-arrow"></use>
               </svg>
-            </div>
+            </button>
           </div>
         </div>
       </div>
@@ -269,4 +269,3 @@
 </body>
 
 </html>
-
